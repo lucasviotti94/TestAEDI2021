@@ -1,36 +1,44 @@
-# def palindromos():
-    lista = [ ]
-    try:            
-        palabra_o_frase = str(input("Ingrese una palabra o frase: "))
-        if palabra_o_frase == palabra_o_frase.reverse() 
-    except:
-        print("Error.")
+# Funcion para saber si una palabra es capicua
+def es_palindromo():
+  palabra_original = input("Ingrese una palabra: ")
+  if not palabra_original.isalpha():
+    print("la palabra no es correcta")
+  else:
+    palabra_original_lista = list(palabra_original)
+    palabra_reversa = palabra_original_lista.copy()
+    palabra_reversa.reverse()
+    if palabra_original_lista == palabra_reversa:
+      print("OK! es una palabra capicua")
+    else:
+      print("ERROR! No es una palabra capicua")
+
+es_palindromo()
 
 
-def materias():
-    lista = [ ]
+# Funcion para ordenar materias
+def ordenamiento_de_palabras():
+    lista_materias=[]
     for i in range(5):
-        materia = input("Ingrese la materia")
-        palabra_o_frase(materia)
-        if palabra_o_frase == True:
+        while True:
+            materia = input(f"Ingrese la materia numero {i+1}: ")
             if materia.isalpha():
-                for i in materia:
-                    if i != " ":
-                        print("Esto es una frase") 
-                    break                    
+                lista_materias.append(materia)
+                break
             else:
-                print("error")                   
+                print("Reintentar, valor erroneo.")
+    lista_materias.sort()
+    print(lista_materias)
 
-    lista.sort()
-    return lista
+ordenamiento_de_palabras()
 
+# Pequeña funcion para saber si una variable string es palabra o frase
 materias()
 def palabra_o_frase(a):
     for i in a:
         if i == " ":
-            False            
+            True            
         else:
-            True
+            False
 
 
 
