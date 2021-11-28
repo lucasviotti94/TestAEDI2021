@@ -60,9 +60,9 @@ try:
     dinero_disponible = float(input("Ingrese a continuación el dinero que dispone: "))
     if dinero_disponible >= 10000:
         print("Udsted puede comprarse un Ford")
-    else: dinero_disponible >= 11000
+    elif dinero_disponible >= 11000:
         print("Udsted puede comrparse un Renault")
-    else: dinero_disponible >= 15000:
+    elif (dinero_disponible >= 15000):
         print("Udsted puede comprarse una Chevrolet")
 except:
     print("No ingreso un numero.")

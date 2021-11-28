@@ -1,15 +1,14 @@
 import Clases as cl
 import os
+
 path = os.path.abspath(os.path.dirname("historial_habitaciones.txt"))
-
-
-
+lista_habitaciones = []
 precio_habitaciones = {
     "CO": 300, 
     "CL": 400,
     "PR": 500
     }
-lista_habitaciones = []
+
 
 class GestorHabitaciones():
     datos = []
@@ -131,10 +130,9 @@ Ingrese a continuacion que tipo de habitacion desea crear:
                 cont = 0
                 for i in lista_habitaciones:
                     cont+=1
-                if numero_pedido >= cont:
-                    for habitacion in lista_habitaciones:
-                        print(f"Habitacion disponible numero: {habitacion.numero}")
-                    break
+                if numero_pedido <= cont:
+                    for i in lista_habitaciones():      #Aca me falta recorrer la cantidad de habitaciones pedidas
+                        pass
                 else:
                     print("No existe esa cantidad de habitaciones listadas, ingrese nuevamente otro numero.")
                     

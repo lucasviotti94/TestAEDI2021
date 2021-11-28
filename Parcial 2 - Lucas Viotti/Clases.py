@@ -30,7 +30,7 @@ class HabitacionClasica(Habitacion):
         self.cant_televisores = cant_televisores
 
     def mostrar_información(self):
-        print(f"El numero de esta habitacion es {self.numero}, se realizara el dia {self.max_pesonas}, en {self.precio}, y ademas cuenta con el siguiente numero de televisores: {self.cant_televisores} ") 
+        print(f"El numero de esta habitacion es {self.numero}, cuenta con un maximo de personas de {self.max_pesonas}, el precio es de {self.precio}, y ademas cuenta con el siguiente numero de televisores: {self.cant_televisores} ") 
 
 class HabitacionPremium(Habitacion):
 
@@ -41,8 +41,8 @@ class HabitacionPremium(Habitacion):
     def mostrar_información(self,Jacuzzi):
         if Jacuzzi == True:
             disponible = "Jacuzzi disponible"
-            print(f"El numero de esta habitacion es {self.numero}, se realizara el dia {self.max_pesonas}, en {self.precio} y ademas cuenta con {disponible}")        
+            print(f"El numero de esta habitacion es {self.numero}, cuenta con un maximo de personas de {self.max_pesonas}, el precio es de {self.precio} y ademas cuenta con {disponible}.")        
         else:
-            no_disponible = "no cuenta con jacuzzi."
-            print(f"El numero de esta habitacion es {self.numero}, se realizara el dia {self.max_pesonas}, en {self.precio} y esta habitacion {no_disponible}")
+            no_disponible = "no cuenta con Jacuzzi."
+            print(f"El numero de esta habitacion es {self.numero}, cuenta con un maximo de personas de {self.max_pesonas}, el precio es de {self.precio},y {no_disponible}.")
         
