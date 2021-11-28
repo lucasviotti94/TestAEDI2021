@@ -77,11 +77,13 @@ try:
             print("Morado.")
         elif
             print("Amarillo.")
-    elif
+        else:
+            pass
+    elif:
         color13= str(input("Ingrese el segudo color: "))
-        if color13=="verde"
+        if color13=="verde":
             print("Cyan.")
-        elif
+        elif:
             print("Morado.")
 except:
     print("Ingreso un dato incorrecto.")
