@@ -51,7 +51,7 @@ El programa debe:
          personas que contenga y el tipo de habitacion:
          - Se debe leer el diccionario por el tipo de habitacion y multiplicar ese precio por la cantidad de personas.
          Ej. Precio hab clasica = 400 (CL)* max_personas = 400 * 5 = 2000 IMPORANTE! solo se le pide el numero de habitacion al usuario
-    3.   Pedir al 1usuario un numero y listar esa cantidad de habitaciones de la lista, verificando que hayan esa cantidad de habitaciones
+    3.   Pedir al usuario un numero y listar esa cantidad de habitaciones de la lista, verificando que hayan esa cantidad de habitaciones
     
 *   Se deben crear los métodos correspondientes para las funciones del menú en las clases correspondientes
 *   Gestionar posibles errores

@@ -51,7 +51,7 @@ opcion: """)
         elif base_mostrar == "3":
                 break
         else:
-                print("Opcion incorrecta")
+            print("Opcion incorrecta")
 
 def eliminar_peliculas_series():
     while True:
@@ -71,7 +71,7 @@ opcion: """)
                 base.get("peliculas").remove(nombre_pelicula)
             else:
                 print("ese nombre no existe")
-        elif base_mostrar == "2": 
+        elif base_mostrar == "2":
             lista_series = base.get("series")
             print(lista_series)
             nombre_series = input("Ingrese el nombre de la pelicula a eliminar: ")
@@ -82,7 +82,7 @@ opcion: """)
         elif base_mostrar == "3":
                 break
         else:
-                print("Opcion incorrecta")
+            print("Opcion incorrecta")
 
 def mostrar_de_A_B():
     while True:
@@ -95,8 +95,8 @@ Ingrese si requiere mostrar:
 3. Salir
 opcion:  """)
         if base_mostrar =="1":
-            list_peliculas = base.get("peliculas") 
-            print(list_peliculas)            
+            list_peliculas = base.get("peliculas")
+            print(list_peliculas)
             while True:
                 try:
                     primera_posicion = int(input("Ingrese la primera posición: "))
@@ -107,7 +107,7 @@ opcion:  """)
             for i in range(primera_posicion-1,segunda_posicion):
                 print(list_peliculas[i],end="-")
         elif base_mostrar == "2":
-            list_series = base.get("series") 
+            list_series = base.get("series")
             print(list_series)
                 #falta try excecpt
             primera_posicion =int(input("Ingrese la primera posición: "))
@@ -133,13 +133,13 @@ Ingrese si requiere buscar en:
 3. Salir
 opcion:  """)
         if base_mostrar =="1":
-            lista_peliculas = base.get("peliculas")    
+            lista_peliculas = base.get("peliculas")
             palabra_requerida = input("Ingrese la palabra a buscar: ")
             for pelicula in lista_peliculas:
                 if palabra_requerida in pelicula:
                     print(f"La palabra {palabra_requerida} esta en {pelicula}")
         elif base_mostrar == "2":
-            list_series = base.get("series") 
+            list_series = base.get("series")
             palabra_requerida = input("Ingrese la palabra a buscar: ")
             for serie in list_series:
                 if palabra_requerida in serie:
@@ -147,4 +147,21 @@ opcion:  """)
         elif base_mostrar == "3":
                 break
         else:
-                print("Opcion incorrecta")
+            print("Opcion incorrecta")
+
+
+Flag = True
+while Flag:
+    datos = []
+    lista_habitaciones = []
+    try:
+        numero_habitacion = int(input("Ingrese a continuacion el numero de la habitacion nueva: "))
+        for habitaciones in lista_habitaciones:
+            if (numero_habitacion == habitaciones.numero):
+                print("Ya existe este numero de habitacion, ingrese otro.")
+            else:
+                print("Numero ingresado de manera correcta.")
+                datos.append(numero_habitacion)
+                Flag = False
+    except:
+        print("Ingrese solamente numeros enteros.")
