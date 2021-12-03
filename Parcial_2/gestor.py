@@ -146,7 +146,6 @@ Ingrese a continuacion que tipo de habitacion desea crear:
             except:
                 print("Solo numeros enteros")
 
-
     def logeador_habitaciones(self,datos_parametro):
         try:
             fichero = open(path+"\\historial_habitaciones.csv", "a+")   #Permiso de apertura y actualizacion, y agregar al fondo si existe el archivo
